@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'main#index'
 
+  get '/show/:id' => 'second#show', as: :show
+
+  get '/:id' => 'main#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
