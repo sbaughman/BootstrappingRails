@@ -13,10 +13,26 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div class="jumbotron">
+    <div class="container">    
+      <div class="row">
+        <div class="col-sm-4">
+          <%= image_tag("ice-cube", :class => 'img-responsive') %>
+        </div>
+        <div id="headline" class="col-sm-8">
+          <h1>We Be Bootstrappin'</h1>
+          <h2>An IronYard Project from the Projects</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
 
-<%= yield %>
 
 </body>
 </html>
